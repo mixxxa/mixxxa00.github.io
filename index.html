@@ -1,91 +1,197 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" lang="ru" content="" />
+<meta name="keywords" lang="ru" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Главная страница</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 7]> 
+	<link href="css/ie7.css" type="text/css" rel="stylesheet"> 
+<![endif]-->
+</head>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+<body>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Mixxxa00.GitHub.io by mixxxa</title>
-  </head>
+<div class="container">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/mixxxa/mixxxa00.github.io">View on GitHub</a>
-    <div class="shell">
+	<div class="header">
+	
+		<a href="#" class="logo"></a>
+		
+		<div class="contacts_top"> г.Иркутск, ул. Блюхера, 6
+			<div class="phone_top">8 (3952) 505-700</div>
+		</div><!--/contacts_top-->
+		
+		<form action="." method="get" name="login_form" class="login_form">
+			<div class="login_title">Вход в личный кабинет</div>
+			<input name="login_str" type="text" class="login_str" value="Ваш логин (ИНН)" onfocus="if(this.value=='Ваш логин (ИНН)') this.value='';" onblur="if(!this.value) this.value='Ваш логин (ИНН)';" />
+			<a href="#" class="reg_link">Регистрация</a>
+			<input name="login_btn" type="submit" class="login_btn" value="Войти" />
+		</form><!--/login_form-->
+		
+		<ul class="nav_top">
+			<li><a href="#"><span>Главная</span></a></li>
+			<li><a href="#"><span>О компании</span></a></li>
+			<li><a href="#"><span>Продукция</span></a></li>
+			<li><a href="#"><span>IMS Сервис</span></a></li>
+			<li><a href="#"><span>Новости</span></a></li>
+			<li><a href="#"><span>Сотрудничество</span></a></li>
+			<li><a href="#"><span>Контакты</span></a></li>
+			<li><a href="#"><span>Вакансии</span></a></li>
+		</ul><!--/nav_top-->
+		
+	</div><!--/header-->
+	
+	<div class="slider">
+	
+		<div class="sliderContent">
+			<div class="item"> <img src="images/slide_1.jpg" width="986" height="227" alt="img" /> </div>
+			<div class="item"> <img src="images/slide_2.jpg" width="986" height="227" alt="img" /> </div>
+			<div class="item"> <img src="images/slide_1.jpg" width="986" height="227" alt="img" /> </div>
+		</div><!--/sliderContent-->
+		
+	</div><!--/slider-->
+	
+	<div class="lside">
+	
+		<div class="titles">Поиск по каталогу</div>
+		
+		<form action="." method="get" name="search_form_main" class="search_form_main">
+			<div class="search_main_title">Введите в поиск:</div>
+			<input name="search_main_str" type="text" class="search_main_str" value="" />
+			<input name="search_main_btn" type="submit" class="search_main_btn" value="Найти" />
+		</form><!--/search_form_main-->
+		
+		<div class="titles">Каталог продукции</div>
+		
+		<ul class="nav_left">
+			<li><a href="#" class="icon_1"><span>Кабель/Провод</span></a></li>
+			<li><a href="#" class="icon_2"><span>Светотехника</span></a></li>
+			<li><a href="#" class="icon_3"><span>Лампы</span></a></li>
+			<li><a href="#" class="icon_4"><span>Высоковольтное оборудование</span></a></li>
+			<li><a href="#" class="icon_5"><span>Электроустановочные изделия</span></a></li>
+			<li><a href="#" class="icon_6"><span>Низковольтное оборудование</span></a></li>
+			<li><a href="#" class="icon_7"><span>Инструмент</span></a></li>
+			<li><a href="#" class="icon_8"><span>Электроинструмент</span></a></li>
+			<li><a href="#" class="icon_9"><span>Крепежные изделия</span></a></li>
+		</ul><!--/nav_left-->
+		
+		<div class="video_wrap">
+			<div class="titles">Видео</div>
+			<a href="#" class="video_arhive">Архив видео</a>
+			<div class="video">
+				<a href="#" class="video_btn"></a>
+				<img src="images/video.gif" width="209" height="95" alt="img" />
+			</div>
+		</div><!--/video_wrap--> 
+		
+	</div><!--/lside-->
+	
+	<div class="rside">
+	
+		<div class="content">
+		
+			<div class="titles">Новости компании</div>
+			
+			<form action="." method="get" name="subscribe_form" class="subscribe_form">
+				<div class="subscribe_title">Ваш <br />E-Mail:</div>
+				<input name="subscribe_str" type="text" class="subscribe_str" value="" />
+				<input name="subscribe_btn" type="submit" class="subscribe_btn" value="Подписаться" />
+			</form><!--/subscribe_form-->
+			
+			<a href="#" class="rss"></a>
+			
+			<a href="#" class="all_news">Все новости</a>
+			
+			<div class="clr"></div>
+			
+			<div class="news">
+				<a href="#">Поступлены на продажу Электротехника, освещение, электротехнические изделия и электрика</a>
+				<div class="news_date">00.12.2013</div>
+				<p>Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика</p>
+			</div><!--/news-->
+			
+			<div class="news">
+				<a href="#">Поступлены на продажу Электротехника, освещение, электротехнические изделия и электрика</a>
+				<div class="news_date">00.12.2013</div>
+				<p>Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика</p>
+			</div><!--/news-->
+			
+			<div class="news">
+				<a href="#">Поступлены на продажу Электротехника, освещение, электротехнические изделия и электрика</a>
+				<div class="news_date">00.12.2013</div>
+				<p>Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика</p>
+			</div><!--/news-->
+			
+			<div class="news">
+				<a href="#">Поступлены на продажу Электротехника, освещение, электротехнические изделия и электрика</a>
+				<div class="news_date">00.12.2013</div>
+				<p>Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика Краткое описание про продажу Электротехника, освещение, электротехнические изделия и электрика</p>
+			</div><!--/news-->		
+			
+			<ul class="page_nav">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#" class="active_page">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul><!--/page_nav-->
+			
+		</div><!--/content-->
+		
+		<div class="rside_in">
+		
+			<a href="#" class="el_application">Электронная<br />заявка</a>
+		
+			<div class="baner">
+				<a href="#"><img src="images/baner_1.gif" width="209" height="203" alt="img" /></a>
+			</div>
+			
+			<div class="baner">
+				<a href="#"><img src="images/baner_2.gif" width="209" height="203" alt="img" /></a>
+			</div>
+			
+			<div class="titles">Схема проезда</div>
+			
+			<div class="sheme">
+				<a href="#"><img src="images/sheme.gif" width="209" height="161" alt="img" /></a>
+			</div>
+			
+		</div><!--/rside_in-->
+		
+	</div><!--/rside-->
+	
+	<div class="clr"></div>
+	
+</div><!--/container-->
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Mixxxa00.GitHub.io</h1>
-            <h2>example</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+<div class="footer">
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/mixxxa/mixxxa00.github.io/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/mixxxa/mixxxa00.github.io/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+	<p class="copyright">&copy; 2013. ЗАО «ЭКА+»</p>
+	
+	<p class="phone_bot">+7 (3952) 505-700, 440-800</p>
+	
+	<p class="working_hours">Время работы: пн.-пт.: 8.45-17.30 по Иркутскому времени<br />Эл.почта: <a href="mailto:eka@adelaida.ru">eka@adelaida.ru</a></p>
+		
+	<ul class="social">
+		<li><a href="#"><img src="images/tw.gif" width="25" height="25" alt="img" /></a></li>
+		<li><a href="#"><img src="images/fb.gif" width="25" height="25" alt="img" /></a></li>
+		<li><a href="#"><img src="images/vk.gif" width="25" height="25" alt="img" /></a></li>
+		<li><a href="#"><img src="images/yt.gif" width="25" height="25" alt="img" /></a></li>
+	</ul>
+	
+	<p class="create">Сделано в <a href="#">Prime Group</a></p>
+	
+</div><!--/footer-->
 
+<a href="#" class="btn_callback"></a>
 
-      <span class="banner-fix"></span>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/select_box.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
-
-      <section id="main_content">
-        <h3>
-<a id="sdsdd" class="anchor" href="#sdsdd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://google.com">sdsdd</a>.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If youвЂ™re using GitHub Desktop, simply sync your repository and youвЂ™ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>WeвЂ™ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributorвЂ™s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and weвЂ™ll help you sort it out.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/mixxxa">mixxxa</a> can be found on <a href="https://github.com/mixxxa/mixxxa00.github.io">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+</body>
 </html>
